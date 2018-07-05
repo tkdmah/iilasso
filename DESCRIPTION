@@ -1,8 +1,8 @@
 Package: iilasso
 Type: Package
 Title: Independently Interpretable Lasso
-Version: 0.0.2
-Date: 2018-06-21
+Version: 0.0.3
+Date: 2018-07-06
 Author: Masaaki Takada
 Maintainer: Masaaki Takada <tkdmah@gmail.com>
 Description: 

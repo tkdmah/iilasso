@@ -157,7 +157,7 @@ NumericMatrix covCdaC(NumericMatrix Gamma, NumericVector gamma, NumericVector la
         z = gamma(j) - prod;
         if (delta == 0) {
           g = lambda(k);
-          beta(j, k) = softThresholdC(z, g);
+          beta(j, k) = softThresholdC(z, g) / Gamma(j, j);
         } else {
           prod = 0;
           for (int l = 0; l < p; l++) {
@@ -191,7 +191,7 @@ NumericMatrix covCdaC(NumericMatrix Gamma, NumericVector gamma, NumericVector la
         z = gamma(j) - prod;
         if (delta == 0) {
           g = lambda(k);
-          beta(j, k) = softThresholdC(z, g);
+          beta(j, k) = softThresholdC(z, g) / Gamma(j, j);
         } else {
           prod = 0;
           for (int l = 0; l < p; l++) {
@@ -222,7 +222,7 @@ NumericMatrix covCdaC(NumericMatrix Gamma, NumericVector gamma, NumericVector la
         z = gamma(j) - prod;
         if (delta == 0) {
           g = lambda(k);
-          beta(j, k) = softThresholdC(z, g);
+          beta(j, k) = softThresholdC(z, g) / Gamma(j, j);
         } else {
           prod = 0;
           for (int l = 0; l < p; l++) {
@@ -513,7 +513,7 @@ NumericMatrix covCdaC2(NumericMatrix Gamma, NumericVector gamma, NumericVector l
         z = gamma(j) - prod;
         if (delta == 0) {
           g = lambda(k);
-          beta(j, k) = softThresholdC(z, g);
+          beta(j, k) = softThresholdC(z, g) / Gamma(j, j);
         } else {
           prod = 0;
           for (int l = 0; l < p; l++) {
@@ -548,7 +548,7 @@ NumericMatrix covCdaC2(NumericMatrix Gamma, NumericVector gamma, NumericVector l
         z = gamma(j) - prod;
         if (delta == 0) {
           g = lambda(k);
-          beta(j, k) = softThresholdC(z, g);
+          beta(j, k) = softThresholdC(z, g) / Gamma(j, j);
         } else {
           prod = 0;
           for (int l = 0; l < p; l++) {
@@ -580,7 +580,7 @@ NumericMatrix covCdaC2(NumericMatrix Gamma, NumericVector gamma, NumericVector l
         z = gamma(j) - prod;
         if (delta == 0) {
           g = lambda(k);
-          beta(j, k) = softThresholdC(z, g);
+          beta(j, k) = softThresholdC(z, g) / Gamma(j, j);
         } else {
           prod = 0;
           for (int l = 0; l < p; l++) {
